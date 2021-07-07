@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/WebDev-Sum21-FinalProject-client/static/css/main.12094e9d.chunk.css",
+    "main.js": "/WebDev-Sum21-FinalProject-client/static/js/main.9912d073.chunk.js",
+    "main.js.map": "/WebDev-Sum21-FinalProject-client/static/js/main.9912d073.chunk.js.map",
+    "runtime-main.js": "/WebDev-Sum21-FinalProject-client/static/js/runtime-main.18b7de25.js",
+    "runtime-main.js.map": "/WebDev-Sum21-FinalProject-client/static/js/runtime-main.18b7de25.js.map",
+    "static/js/2.b144b1a9.chunk.js": "/WebDev-Sum21-FinalProject-client/static/js/2.b144b1a9.chunk.js",
+    "static/js/2.b144b1a9.chunk.js.map": "/WebDev-Sum21-FinalProject-client/static/js/2.b144b1a9.chunk.js.map",
+    "static/js/3.3b223d5f.chunk.js": "/WebDev-Sum21-FinalProject-client/static/js/3.3b223d5f.chunk.js",
+    "static/js/3.3b223d5f.chunk.js.map": "/WebDev-Sum21-FinalProject-client/static/js/3.3b223d5f.chunk.js.map",
+    "index.html": "/WebDev-Sum21-FinalProject-client/index.html",
+    "static/css/main.12094e9d.chunk.css.map": "/WebDev-Sum21-FinalProject-client/static/css/main.12094e9d.chunk.css.map",
+    "static/js/2.b144b1a9.chunk.js.LICENSE.txt": "/WebDev-Sum21-FinalProject-client/static/js/2.b144b1a9.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.18b7de25.js",
+    "static/js/2.b144b1a9.chunk.js",
+    "static/css/main.12094e9d.chunk.css",
+    "static/js/main.9912d073.chunk.js"
+  ]
+}
