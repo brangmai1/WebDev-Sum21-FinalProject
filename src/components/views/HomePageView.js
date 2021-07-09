@@ -3,6 +3,7 @@ import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
 import { makeStyles } from '@material-ui/core/styles';
+import university from './images/university.jpeg';
 
 import { Link } from 'react-router-dom';
 
@@ -24,15 +25,34 @@ const useStyles = makeStyles(theme => ({
   },
   greeting:{
     display: 'flex',
+    fontSize: '30px',
+    backgroundColor: '',
+    fontFamily: 'Bungee Outline',
     justifyContent: 'center',
-    backgroundColor: 'white',
-    width: "50%",
-    margin: "auto",
+    width: "100%",
+    marginTop: "20px",
   },
   links:{
     textDecoration: 'none',
+  },
+  unipic:{
+    justifyContent: 'center',
+    display: 'flex',
+    width: "100%",
+    height: "50%",
+    marginTop: '20px',
+  },
+  footer:{
+    backgroundColor: '#11153e',
+    textAlign: "center",
+    padding: "20px",
+    position: "fixed",
+    left: "0",
+    bottom: "0",
+    height: "60px",
+    width: "100%",
+    color: 'white',    
   }
-
 }));
 
 const HomePageView = () => {
@@ -59,7 +79,15 @@ const HomePageView = () => {
         </Toolbar>
       </AppBar>
       
-      <div className={classes.greeting}><h1>Home Page</h1></div>
+      <div className={classes.greeting}><h1>Brang University</h1></div>
+      <div className={classes.unipic}>
+        <img src={university} alt={"university"} />
+      </div>
+      <div className={classes.footer} >
+        <h3>Brang University</h3>
+        <h5>New York City</h5>
+      </div>
+      
     </div>
   );    
 }
