@@ -1,3 +1,5 @@
+// src/components/views/AllStudentsView.js
+
 import { Link } from "react-router-dom";
 
 const AllStudentsView = (props) => {
@@ -34,6 +36,5 @@ const AllStudentsView = (props) => {
     </div>
   );
 };
-
 
 export default AllStudentsView;

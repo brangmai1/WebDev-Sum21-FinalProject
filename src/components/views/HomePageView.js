@@ -8,6 +8,8 @@ import bestUni from './images/bestuni.png';
 import Library from './images/library.jpeg';
 import Award from './images/award.jpeg';
 import Campus1 from './images/campus1.jpeg';
+import Students from './images/students.jpeg';
+import Graduation from './images/graduation.jpeg';
 import { Link } from 'react-router-dom';
 
 const useStyles = makeStyles(theme => ({
@@ -85,7 +87,7 @@ const HomePageView = () => {
       <AppBar position="static" elevation={0} className={classes.appBar}>
         <Toolbar>
           <Typography variant="h6" className={classes.title} color="inherit" >
-            BU [CRUD App]
+            <strong>BU</strong> [CRUD App]
           </Typography>
 
           <Link className={classes.links} to={'/campuses'} >
@@ -110,11 +112,17 @@ const HomePageView = () => {
       
       <div className={classes.bestuni}>
         <div className={classes.pictures}>
+          <img src={Students} alt={"Students"} />
+        </div>
+        <div className={classes.pictures}>
           <img src={Library} alt={"Library"}  /> 
         </div>
           <img src={bestUni} alt={"The best university"} />
         <div className={classes.pictures}>
-          <img src={Campus1} alt={"University"}  />        
+          <img src={Campus1} alt={"University"}  />      
+        </div>
+        <div className={classes.pictures}>  
+          <img src={Graduation} alt={"Graduation"} />     
         </div>
       </div>
       
