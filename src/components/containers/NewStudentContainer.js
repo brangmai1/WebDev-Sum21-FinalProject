@@ -2,7 +2,9 @@ import { Component } from 'react';
 import { connect } from 'react-redux';
 import { Redirect } from 'react-router-dom';
 import NewStudentView from '../views/NewStudentView';
+import HomePageView from '../views/HomePageView';
 import { addStudentThunk } from '../../store/thunks';
+import { Divider } from '@material-ui/core';
 
 
 class NewStudentContainer extends Component {
@@ -13,7 +15,7 @@ class NewStudentContainer extends Component {
           lastname: "", 
           campusId: null, 
           redirect: false, 
-          redirectId: null
+          // redirectId: null
         };
     }
 
@@ -39,17 +41,20 @@ class NewStudentContainer extends Component {
           lastname: "", 
           campusId: null, 
           redirect: true, 
-          redirectId: newStudent.id
+          // redirectId: newStudent.id
         });
     }
 
     componentWillUnmount() {
-        this.setState({redirect: false, redirectId: null});
+        // this.setState({redirect: false, redirectId: null});
+        this.setState({redirect: false});
+
     }
 
     render() {
         if(this.state.redirect) {
-          return (<Redirect to={`/student/${this.state.redirectId}`}/>)
+          // return (<Redirect to={`/student/${this.state.redirectId}`}/>)
+          return (<Redirect to={`/student/${this.state.firstname}`}/>)
         }
         return (
           <NewStudentView 

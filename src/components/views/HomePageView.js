@@ -119,7 +119,7 @@ const HomePageView = () => {
         </div>
           <img src={bestUni} alt={"The best university"} />
         <div className={classes.pictures}>
-          <img src={Campus1} alt={"University"}  />      
+          <img src={Campus1} alt={"University"}  /> 
         </div>
         <div className={classes.pictures}>  
           <img src={Graduation} alt={"Graduation"} />     
