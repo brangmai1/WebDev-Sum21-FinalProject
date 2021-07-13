@@ -3,6 +3,8 @@ import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
 import { makeStyles } from '@material-ui/core/styles';
+import { Link } from 'react-router-dom';
+
 import University from './images/university.jpeg';
 import bestUni from './images/bestuni.png';
 import Library from './images/library.jpeg';
@@ -10,7 +12,7 @@ import Award from './images/award.jpeg';
 import Campus1 from './images/campus1.jpeg';
 import Students from './images/students.jpeg';
 import Graduation from './images/graduation.jpeg';
-import { Link } from 'react-router-dom';
+
 
 const useStyles = makeStyles(theme => ({
   root: {

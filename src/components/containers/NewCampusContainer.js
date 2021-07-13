@@ -1,17 +1,17 @@
 import { Component } from 'react';
 import { connect } from 'react-redux';
 import { Redirect } from 'react-router-dom';
-import NewStudentView from '../views/NewStudentView';
+import NewCampusView from '../views/NewCampusView';
 import { addStudentThunk } from '../../store/thunks';
 import { Divider } from '@material-ui/core';
 
 
-class NewStudentContainer extends Component {
+class NewCampusContainer extends Component {
     constructor(props){
         super(props);
         this.state = {
-          firstname: "", 
-          lastname: "", 
+          campusname: "", 
+          description: "", 
           campusId: null, 
           redirect: false, 
           redirectId: ""
@@ -27,17 +27,17 @@ class NewStudentContainer extends Component {
     handleSubmit = async event => {
         event.preventDefault();
 
-        let student = {
-            firstname: this.state.firstname,
-            lastname: this.state.lastname,
+        let campus = {
+            campusname: this.state.campusname,
+            description: this.state.description,
             campusId: this.state.campusId
         };
         
-        let newStudent = await this.props.addStudent(student);
+        let newCampus = await this.props.addCampus(campus);
 
         this.setState({
-          firstname: "", 
-          lastname: "", 
+          campusname: "", 
+          description: "", 
           campusId: null, 
           redirect: true, 
           // redirectId: newStudent.id
@@ -52,11 +52,11 @@ class NewStudentContainer extends Component {
 
     render() {
         if(this.state.redirect) {
-          return (<Redirect to={`/student/${this.state.redirectId}`}/>
+          return (<Redirect to={`/campus/${this.state.redirectId}`}/>
           );
         }
         return (
-          <NewStudentView 
+          <NewCampusView 
             handleChange = {this.handleChange} 
             handleSubmit={this.handleSubmit}      
           />
@@ -66,8 +66,8 @@ class NewStudentContainer extends Component {
 
 const mapDispatch = (dispatch) => {
     return({
-        addStudent: (student) => dispatch(addStudentThunk(student)),
+        addCampus: (campus) => dispatch(addStudentThunk(campus)),
     })
 }
 
-export default connect(null, mapDispatch)(NewStudentContainer);
+export default connect(null, mapDispatch)(NewCampusContainer);

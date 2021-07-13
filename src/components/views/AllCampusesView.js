@@ -6,7 +6,12 @@ import { makeStyles } from '@material-ui/core/styles';
 const AllCampusesView = (props) => {
   if (!props.allCampuses.length) {
     return (
-      <div>There are no campuses.</div>
+      <div>
+        There are no campuses.
+        <Link to={`/newcampus`}> <br />
+          <button><strong>Add Campus</strong></button>
+        </Link>
+      </div>          
     );  
   }
 
@@ -20,6 +25,11 @@ const AllCampusesView = (props) => {
           <p>{campus.description}</p>
         </div>
       ))}
+      <div>
+        <Link to={`/newcampus`}> <br />
+          <button><strong>Add Campus</strong></button>
+        </Link>
+      </div>
     </div>
   );
 };
